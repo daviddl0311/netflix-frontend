@@ -157,7 +157,7 @@ input[type="email"]:focus {
     position: relative;
 }
 .peliculas {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
     padding: 2rem 0;
