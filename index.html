@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="preload" href="js.js" as="script">
+    <link rel="preload" href="css.css" as="style">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="center">
+        <nav class="container2 flex flex-space">
+            <div class="center">
+                <a href="#inicio">
+                    <img src="img/netflix-logo.png" alt="Logo de Netflix" class="img-title">
+                    <img src="img/netflix-icon.png" alt="Icono de Netflix" class="img-title2">
+                </a>
+            </div>
+            <div class="center">
+                <button class="btn-login">
+                    Iniciar sesión
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="center" id="inicio">
+            <article class="container2 inicio">
+                <div class="image">
+                    <img src="img/fondo.jpg" alt="Fondo de Peliculas" class="img-fondo">
+                    <div class="info grid gap2">
+                        <h1 class="info-title center-align2">Solo en Netflix</h1>
+                        <p class="info-text center-align2">En Netflix encontrarás títulos originales increíbles que no están en ninguna otra parte. Películas, programas de TV, especiales y más pensados exclusivamente para ti.</p>
+                        <div class="grid grid-column gap3 center2">
+                            <input type="email" placeholder="Dirección de email">
+                            <div class="center-align2">
+                                <button class="btn-join">Unirte Ahora</button>
+                            </div>
+                        </div>
+                        <p class="info-text-2 center-align2">Entretenimiento sin fin desde S/ 28.90</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="center grid gap4" id="peliculas">
+            <article class="grid">
+                <div>
+                    <h2 class="title-peliculas">Tu próxima historia</h2>
+                </div>
+                <div class="container movies flex">
+                    <div class="center btnLeft btnLeft-disabled">
+                        <button id="btn-left">&lt</button>
+                    </div>
+                    <div class="peliculas">
+                        <ul class="peliculas-inner flex">
+                            <li class="item grid gap3" id="ini">
+                                <img src="img/img-pelis/Peli1.jpg" alt="Spider-Man: No Way Home" class="item-img">
+                                <p class="center-align item-name">Spider-Man: No Way Home</p>
+                            </li>  
+                            <li class="item grid gap">
+                                <img src="img/img-pelis/Peli2.jpg" alt="Spider-Man: Across The Spider-Verse" class="item-img">
+                                <p class="center-align item-name">Spider-Man: Across The Spider-Verse</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli3.jpg" alt="El Señor de los Anillos" class="item-img">
+                                <p class="center-align item-name">El Señor de los Anillos</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli4.jpg" alt="Iron Man" class="item-img">
+                                <p class="center-align item-name">Iron-Man</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli5.jpg" alt="Avengers Infinity War" class="item-img">
+                                <p class="center-align item-name">Avengers - Infinity War</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli6.jpg" alt="Pokemon" class="item-img">
+                                <p class="center-align item-name">Pokemon</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli7.jpg" alt="Matrix" class="item-img">
+                                <p class="center-align item-name">Matrix</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli8.jpg" alt="Daredevil" class="item-img">
+                                <p class="center-align item-name">Daredevil</p>
+                            </li>
+                            <li class="item" id="fin">
+                                <img src="img/img-pelis/Peli9.jpg" alt="Señor de la Guerra" class="item-img">
+                                <p class="center-align item-name">Señor de la Guerra</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center btnRight">
+                        <button id="btn-right">&gt</button>
+                    </div>
+                </div>
+            </article>
+            <article class="grid">
+                <div>
+                    <h2 class="title-peliculas">De Hollywood a tu pantalla</h2>
+                </div>
+                <div class="container movies flex">
+                    <div class="center btnLeft btnLeft-disabled">
+                        <button id="btn-left">&lt</button>
+                    </div>
+                    <div class="peliculas">
+                        <ul class="peliculas-inner flex">
+                           <li class="item grid gap3" id="ini">
+                                <img src="img/img-pelis/Peli1.jpg" alt="Spider-Man: No Way Home" class="item-img">
+                                <p class="center-align item-name">Spider-Man: No Way Home</p>
+                            </li>  
+                            <li class="item grid gap">
+                                <img src="img/img-pelis/Peli2.jpg" alt="Spider-Man: Across The Spider-Verse" class="item-img">
+                                <p class="center-align item-name">Spider-Man: Across The Spider-Verse</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli3.jpg" alt="El Señor de los Anillos" class="item-img">
+                                <p class="center-align item-name">El Señor de los Anillos</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli4.jpg" alt="Iron Man" class="item-img">
+                                <p class="center-align item-name">Iron-Man</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli5.jpg" alt="Avengers Infinity War" class="item-img">
+                                <p class="center-align item-name">Avengers - Infinity War</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli6.jpg" alt="Pokemon" class="item-img">
+                                <p class="center-align item-name">Pokemon</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli7.jpg" alt="Matrix" class="item-img">
+                                <p class="center-align item-name">Matrix</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli8.jpg" alt="Daredevil" class="item-img">
+                                <p class="center-align item-name">Daredevil</p>
+                            </li>
+                            <li class="item" id="fin">
+                                <img src="img/img-pelis/Peli9.jpg" alt="Señor de la Guerra" class="item-img">
+                                <p class="center-align item-name">Señor de la Guerra</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center btnRight">
+                        <button id="btn-right">&gt</button>
+                    </div>
+                </div>
+            </article>
+            <article class="grid">
+                <div>
+                    <h2 class="title-peliculas">Series para maratonear</h2>
+                </div>
+                <div class="container movies flex">
+                    <div class="center btnLeft btnLeft-disabled">
+                        <button id="btn-left">&lt</button>
+                    </div>
+                    <div class="peliculas">
+                        <ul class="peliculas-inner flex">
+                            <li class="item grid gap3" id="ini">
+                                <img src="img/img-pelis/Peli1.jpg" alt="Spider-Man: No Way Home" class="item-img">
+                                <p class="center-align item-name">Spider-Man: No Way Home</p>
+                            </li>  
+                            <li class="item grid gap">
+                                <img src="img/img-pelis/Peli2.jpg" alt="Spider-Man: Across The Spider-Verse" class="item-img">
+                                <p class="center-align item-name">Spider-Man: Across The Spider-Verse</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli3.jpg" alt="El Señor de los Anillos" class="item-img">
+                                <p class="center-align item-name">El Señor de los Anillos</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli4.jpg" alt="Iron Man" class="item-img">
+                                <p class="center-align item-name">Iron-Man</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli5.jpg" alt="Avengers Infinity War" class="item-img">
+                                <p class="center-align item-name">Avengers - Infinity War</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli6.jpg" alt="Pokemon" class="item-img">
+                                <p class="center-align item-name">Pokemon</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli7.jpg" alt="Matrix" class="item-img">
+                                <p class="center-align item-name">Matrix</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli8.jpg" alt="Daredevil" class="item-img">
+                                <p class="center-align item-name">Daredevil</p>
+                            </li>
+                            <li class="item" id="fin">
+                                <img src="img/img-pelis/Peli9.jpg" alt="Señor de la Guerra" class="item-img">
+                                <p class="center-align item-name">Señor de la Guerra</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center btnRight">
+                        <button id="btn-right">&gt</button>
+                    </div>
+                </div>
+            </article>
+            <article class="grid">
+                <div>
+                    <h2 class="title-peliculas">Series dramáticas coreanas</h2>
+                </div>
+                <div class="container movies flex">
+                    <div class="center btnLeft btnLeft-disabled">
+                        <button id="btn-left">&lt</button>
+                    </div>
+                    <div class="peliculas">
+                        <ul class="peliculas-inner flex">
+                            <li class="item grid gap3" id="ini">
+                                <img src="img/img-pelis/Peli1.jpg" alt="Spider-Man: No Way Home" class="item-img">
+                                <p class="center-align item-name">Spider-Man: No Way Home</p>
+                            </li>  
+                            <li class="item grid gap">
+                                <img src="img/img-pelis/Peli2.jpg" alt="Spider-Man: Across The Spider-Verse" class="item-img">
+                                <p class="center-align item-name">Spider-Man: Across The Spider-Verse</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli3.jpg" alt="El Señor de los Anillos" class="item-img">
+                                <p class="center-align item-name">El Señor de los Anillos</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli4.jpg" alt="Iron Man" class="item-img">
+                                <p class="center-align item-name">Iron-Man</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli5.jpg" alt="Avengers Infinity War" class="item-img">
+                                <p class="center-align item-name">Avengers - Infinity War</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli6.jpg" alt="Pokemon" class="item-img">
+                                <p class="center-align item-name">Pokemon</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli7.jpg" alt="Matrix" class="item-img">
+                                <p class="center-align item-name">Matrix</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli8.jpg" alt="Daredevil" class="item-img">
+                                <p class="center-align item-name">Daredevil</p>
+                            </li>
+                            <li class="item" id="fin">
+                                <img src="img/img-pelis/Peli9.jpg" alt="Señor de la Guerra" class="item-img">
+                                <p class="center-align item-name">Señor de la Guerra</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center btnRight">
+                        <button id="btn-right">&gt</button>
+                    </div>
+                </div>
+            </article>
+            <article class="grid">
+                <div>
+                    <h2 class="title-peliculas">Lo nuevo en Netflix</h2>
+                </div>
+                <div class="container movies flex">
+                    <div class="center btnLeft btnLeft-disabled">
+                        <button id="btn-left">&lt</button>
+                    </div>
+                    <div class="peliculas">
+                        <ul class="peliculas-inner flex">
+                            <li class="item grid gap3" id="ini">
+                                <img src="img/img-pelis/Peli1.jpg" alt="Spider-Man: No Way Home" class="item-img">
+                                <p class="center-align item-name">Spider-Man: No Way Home</p>
+                            </li>  
+                            <li class="item grid gap">
+                                <img src="img/img-pelis/Peli2.jpg" alt="Spider-Man: Across The Spider-Verse" class="item-img">
+                                <p class="center-align item-name">Spider-Man: Across The Spider-Verse</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli3.jpg" alt="El Señor de los Anillos" class="item-img">
+                                <p class="center-align item-name">El Señor de los Anillos</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli4.jpg" alt="Iron Man" class="item-img">
+                                <p class="center-align item-name">Iron-Man</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli5.jpg" alt="Avengers Infinity War" class="item-img">
+                                <p class="center-align item-name">Avengers - Infinity War</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli6.jpg" alt="Pokemon" class="item-img">
+                                <p class="center-align item-name">Pokemon</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli7.jpg" alt="Matrix" class="item-img">
+                                <p class="center-align item-name">Matrix</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/img-pelis/Peli8.jpg" alt="Daredevil" class="item-img">
+                                <p class="center-align item-name">Daredevil</p>
+                            </li>
+                            <li class="item" id="fin">
+                                <img src="img/img-pelis/Peli9.jpg" alt="Señor de la Guerra" class="item-img">
+                                <p class="center-align item-name">Señor de la Guerra</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center btnRight">
+                        <button id="btn-right">&gt</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="center" id="footer">
+        <div class="container grid">
+            <div class="grid gap2">
+                <div>
+                    <h2 class="title-footer">Un plan que se ajusta a tus necesidades</h2>
+                </div>
+                <div class="grid center grid-column-3 gap2">
+                    <div class="ele basic">
+                        <div class="content grid gap2">
+                            <div class="grid gap">
+                                <h2 class="plan-title">Básico</h2>
+                                <h3 class="plan-hd">720p</h3>
+                                <ul class="list">
+                                    <li>Buena calidad de video</li>
+                                    <li>Para tu teléfono, tablet, laptop y TV</li>
+                                </ul>
+                            </div>
+                            <h3 class="plan-precio margin">S/ 28.90/mes</h3>
+                        </div>
+                    </div>
+                    <div class="ele estandar">
+                        <div class="content grid gap2">
+                            <div class="grid gap">
+                                <h2 class="plan-title">Estándar</h2>
+                                <h3 class="plan-hd">1080p</h3>
+                                <ul class="list">
+                                    <li>Excelente calidad de video</li>
+                                    <li>Para tu teléfono, tablet, laptop y TV</li>
+                                </ul>
+                            </div>
+                            <h3 class="plan-precio margin">S/ 40.90/mes</h3>
+                        </div>
+                    </div>
+                    <div class="ele premium">
+                        <div class="content grid gap2">
+                            <div class="grid gap">
+                                <h2 class="plan-title">Premium</h2>
+                                <h3 class="plan-hd">4K + HDR</h3>
+                                <ul class="list">
+                                    <li>Calidad de video óptima</li>
+                                    <li>Sonido inmersivo (audio espacial)</li>
+                                    <li>Para tu teléfono, tablet, laptop y TV</li>
+                                </ul>
+                            </div>
+                            <h3 class="plan-precio">S/ 52.90/mes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="lanzamientos">
+                    <div class="text-new grid grid-column-2 gap2">
+                        <h2>Descubre tus próximos favoritos y nuevos lanzamientos cada semana</h2>
+                        <div>
+                            <button>Más acerca de Netflix</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-footer center">
+            <button class="btn-join-footer">Unirte Ahora</button>
+        </div>
+        <div class="enlaces grid gap5">
+            <div>
+                <a href="" class="title-enla">¿Preguntas? Contáctanos.</a>
+            </div>
+            <div class="grid grid-column-4 gap5">
+                <div class="flex flex-column gap3 enla">
+                    <a href="">Preguntas frecuentes</a>
+                    <a href="">Relaciones con inversiones</a>
+                    <a href="">Formas de ver</a>
+                    <a href="">Información corporativa</a>
+                    <a href="">Solo en Netflix</a>
+                </div>
+                <div class="flex flex-column gap3 enla">
+                    <a href="">Centro de ayuda</a>
+                    <a href="">Empleo</a>
+                    <a href="">Términos de Uso</a>
+                    <a href="">Contáctanos</a>
+                </div>
+                <div class="flex flex-column gap3 enla">
+                    <a href="">Cuenta</a>
+                    <a href="">Canjear tarjetas de regala</a>
+                    <a href="">Privacidad</a>
+                    <a href="">Prueba de velocidad</a>
+                </div>
+                <div class="flex flex-column gap3 enla">
+                    <a href="">Prensa</a>
+                    <a href="">Comprar tarjetas de regalo</a>
+                    <a href="">Preferencias de cookies</a>
+                    <a href="">Avisos legales</a>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <button id="select" class="flex gap6">
+                <i class="fa-solid fa-language center"></i>
+                <p>
+                    Español
+                </p>
+                <p class="option-text center">
+                    &#9660
+                </p>
+            </button>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
