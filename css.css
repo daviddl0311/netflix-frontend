@@ -8,6 +8,10 @@
 body {
     font-family: system-ui;
     background-color: #0c0c0c;
+    /* overflow-x: hidden; */
+}
+main {
+    overflow-x: hidden;
 }
 button { font-family: system-ui; }
 header {
@@ -165,9 +169,9 @@ input[type="email"]:focus {
 .peliculas-inner {
     list-style: none;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 .item {
     z-index: 1;
     padding: 0 .8rem;    
