@@ -6,19 +6,18 @@
 }
 
 body {
-    font-family: system-ui;
+    font-family: 'BR Shape', sans-serif;
     background-color: #0c0c0c;
-    /* overflow-x: hidden; */
 }
 main {
     overflow-x: hidden;
 }
-button { font-family: system-ui; }
+button { font-family: 'BR Shape', sans-serif; }
 header {
     /* top: 0;
     /* z-index: 999; */
     /* position: sticky; */
-    background-color: #0c0c0c;
+    background-color: #0c0c0cb9;
 }
 h1 {
     font-size: clamp(1.9em, 3vw, 3.8em);
@@ -96,6 +95,9 @@ h1 {
 }
 .image {
     position: relative;
+    border-radius: 1rem;
+    background-color: #000;
+    height: clamp(600px, 30vw, 800px);
 }
 .img-fondo {
     opacity: .3;
