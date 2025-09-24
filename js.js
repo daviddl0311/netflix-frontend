@@ -34,22 +34,15 @@ function actualizarBotones(article) {
     const btnRight = article?.querySelector("#btn-right");
     const btnLeft = article?.querySelector("#btn-left");
 
-    const observe = new IntersectionObserver((entrie, observer) => {
+    const observe = new IntersectionObserver(entrie => {
         entrie.forEach(entry => {
             if(entry.target.id == "fin") {
                 btnRight.style.opacity = entry.isIntersecting ? 0 : 1;
                 contentRight.classList.toggle("btnRight-disabled", entry.isIntersecting);
-                // setTimeout(() => {
-                //     btnRight.style.display = entry.isIntersecting ? "none" : "block";
-                // }, 350);
             }
-            
-            if(entry.target.id == "ini") {
+            if (entry.target.id == "ini") {
                 btnLeft.style.opacity = entry.isIntersecting ? 0 : 1 ;
                 contentLeft.classList.toggle("btnLeft-disabled", entry.isIntersecting);
-                // setTimeout(() => {
-                //     btnLeft.style.display = entry.isIntersecting ? "none" : "block";
-                // }, 350);
             }
         })  
     }, {
@@ -69,7 +62,6 @@ const observeFooter = new IntersectionObserver(entrie => {
         } else if(entry.target.id == "footer") {
             footerBtn.style.position = entry.isIntersecting ? "sticky" : "fixed";
         }
-        
     })
 }, {
     threshold: .3
